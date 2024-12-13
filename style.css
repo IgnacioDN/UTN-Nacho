@@ -1,1 +1,411 @@
-"h2 {color: blue }" 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif /* la segunda opcin es por si el dispositivo no tiene la primera tipografia*/
+    
+} /*modifico todo*/
+
+
+/* HEADER */ 
+
+h1, h2, h3 {
+    font-weight: bold; /* Negrita para los encabezados */
+}
+
+.nav , .nav-item {
+    font-size: 0,9rem;
+
+}
+body {
+
+    background-color:rgb(236, 236, 236);
+}
+
+#header {
+    height: 100px;
+    display: flex;
+    flex-direction: row; /* Asegura que los hijos estén en fila */
+    justify-content: space-between; /* Separa la `nav` y el logo */
+    align-items: center;
+    padding-inline: 8rem; 
+    background-color: rgb(59, 39, 142);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0,0.3); /*0 en horizontal 10 en vertical 10 desenfoque 10 hasta cuantos px y el rgba no hay r,g,b solo opacidad 30% */
+    
+}
+
+
+nav {
+    display: flex; /* Mantén los ítems en fila */
+    flex-wrap: wrap; /* Permite que los ítems bajen si no hay espacio */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    gap: 2.5rem; /* Espaciado entre los ítems */
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.left-content {
+    display: flex;
+    gap: 2rem; /* Aumenta el espacio entre el logo y el nav */
+    align-items: center; /* Alinea verticalmente el logo y el nav */
+    flex-direction: row;
+}
+
+.list{
+    display:flex;
+    gap: 1rem; 
+    }
+
+
+.item{
+    color:white;
+}
+
+.logo {
+    width: 76px;
+    height: auto; /* Mantiene la proporción */
+    border-radius: 80px; /* Bordes redondeados */
+    object-fit: cover; /* Asegura que se vea completo */
+}
+
+
+      
+      .nav-item {
+        padding-top: 20px; /* Mantiene el espacio superior */
+        padding-bottom: 20px; /* Incrementa el espacio inferior */
+        display: flex;
+        flex-direction: column; /* Texto debajo del ícono */
+        align-items: center;
+        text-align: center;
+        color: white; /* Cambia el color del texto */
+        gap: 0.5rem; /* Espaciado entre el ícono y el texto */
+    }
+    
+    .nav-item img {
+        filter: invert(1); /* Invierte el color negro a blanco */
+        width: 32px;
+        border: 3px solid #000;
+        padding: 0.25rem; 
+        border-radius: 100px;
+        display: flex;
+        
+    }
+    
+
+.btn {
+    background-color: rgb(4, 44, 39);
+    padding: 0.5rem;
+    border-radius: 16px;
+}
+
+/* ARTICLE*/
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente el contenido */
+    padding: 1rem;
+    margin-left: 100px;
+}
+
+
+article{
+    padding-inline: 20%;
+    padding-block: 4rem;
+}
+
+.small {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+article h2 {
+    font-size: 3rem;
+    line-height: 3.15rem;
+} /*modifico al h2 que está dentro del article */
+
+
+.subtitle{
+    margin-top: 0.5rem;
+    font-style: italic;
+    font-size: larger;
+}
+
+.special {
+    margin-block: 1rem 1.5rem;
+    opacity: 0.75;
+    max-width: 70%;
+    font-size: 1.2rem;
+
+}
+
+
+.contact {
+     font-size: 1rem;
+      opacity: 1;
+     }
+.contact a { color: rgb(32, 130, 242);
+ }
+.list-button{
+    margin-top: 0.5rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.list-button {
+    margin-top: 0.9rem;
+    display: flex;
+    gap: 1rem; 
+}
+
+.button-top {
+    display: flex; /* Cambia a flexbox para centrar contenido */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    gap: 0.5rem; /* Espacio entre el texto y la imagen */
+    box-sizing: border-box;
+    border: 2px solid #000;
+    border-radius: 16px;
+    padding: 0.5rem 0.85rem;
+    background-color: rgb(197, 195, 195);
+    color: var(--text-c1);
+    
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 25%); /* Ajusta el ancho de las columnas a un 25% */
+    gap: 2rem; /* Espacio entre las columnas */
+    justify-content: center; /* Centra la cuadrícula horizontalmente */
+    align-items: center; /* Centra las columnas verticalmente */
+    margin: 0 auto; /* Centra el contenedor en la página */
+    width: auto; /* Ancho del contenedor, ajusta según necesites */
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 25%); /* Dos columnas de 45% de ancho cada una */
+    gap: 2rem; /* Espaciado entre las columnas */
+    justify-items: center; /* Centra las columnas horizontalmente */
+    align-items: center; /* Centra las columnas verticalmente */
+    margin: 0 auto; /* Centra el contenedor de la cuadrícula */
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.gap-1 {
+    gap: .5rem;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+
+
+
+.size-1{
+    font-size: 1rem;
+}
+
+.experience {
+    width: 100%; /* Asegura que la experiencia ocupe el 100% del ancho del contenedor */
+    min-height: 450px;
+    padding: 0.60rem;
+    border: 2px solid #524747;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem; /* Espaciado entre los elementos dentro del contenedor */
+    transition: all .4s ease-out;
+    cursor: pointer;
+}
+
+.experience .img1 {
+    width: 300px; /* Ancho fijo de 372px */
+    height: 180px; /* Alto fijo de 200px */
+    object-fit: cover; /* Asegura que la imagen ocupe todo el espacio sin distorsionarse */
+    border-radius: 8px; /* Redondea las esquinas */
+    background-color: rgba(0, 0, 0, 0.1); /* Fondo claro detrás de la imagen */
+    display: block;
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    margin-left: 8px;
+    margin-right: 8px;
+
+}
+
+
+.experience .img2 {
+    width: 300px; /* Ancho fijo de 372px */
+    height: 180px; /* Alto fijo de 200px */
+    object-fit: cover; /* Asegura que la imagen ocupe todo el espacio sin distorsionarse */
+    border-radius: 8px; /* Redondea las esquinas */
+    background-color: rgba(0, 0, 0, 0.1); /* Fondo claro detrás de la imagen */
+    display: block;
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    
+}
+
+.tools {
+    margin-top: 1rem; /* Espaciado entre el párrafo y las herramientas */
+    margin-bottom: 1rem;
+}
+
+.tools h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    text-align: center; /* Centra el título */
+}
+
+.tools-row {
+    display: flex;
+    justify-content: center; /* Centra los iconos en la fila */
+    gap: 1rem; /* Espaciado entre los iconos */
+    transform: translateY(5px); /* Efecto de desplazamiento hacia abajo */
+    transition: transform 0.3s ease-out;
+}
+
+.tools-row:hover {
+    transform: translateY(0); /* Elimina el desplazamiento cuando se pasa el ratón por encima */
+}
+
+.tool-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+}
+
+.tool-icon img {
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* Ajusta la imagen para que no se deforme */
+    transition: transform 0.3s ease-in-out; /* Efecto de transición para el zoom */
+}
+
+.tool-icon:hover img {
+    transform: scale(1.1); /* Efecto de zoom cuando se pasa el ratón por encima */
+}
+
+#trabajos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente el contenido */
+    padding: 1rem;
+    margin-left: 100px;
+}
+
+#trabajos h2 {
+    font-size: 2rem;
+    line-height: 3.15rem;
+    margin-left: 280px;
+} /*modifico al h2 que está dentro del article */
+
+/* SECCION WORK*/
+
+#work-with {
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-work {
+    display: flex;
+    gap: 2rem; /* Espacio entre las imágenes */
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    align-items: center; /* Centra las imágenes verticalmente */
+}
+
+.content-work a {
+    display: inline-block; /* Permite que las imágenes se alineen correctamente */
+}
+
+/* Ajusta el tamaño de las imágenes */
+.content-work .img2 {
+    width: 180px; /* Ajusta el ancho a 100px */
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: contain; /* Asegura que la imagen se ajuste sin deformarse */
+    max-width: 100%; /* Hace que las imágenes no se excedan del contenedor */
+}
+
+
+
+.all-icons {
+    margin-bottom: var(--gap-6);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+    grid-template-rows: repeat(2, auto);   /* Dos filas */
+    align-items: flex-start;
+    gap: var(--gap-2);
+}
+
+
+
+.sector-icon img {
+    max-width: 100%;     /* Hace que las imágenes no sobrepasen el 100% del ancho del contenedor */
+    height: auto;        /* Mantiene la proporción de las imágenes (es decir, no se distorsionan) */
+}
+
+/* Este estilo también está aplicado a las imágenes dentro de .sector-icon */
+.sector-icon img {
+    width: 60px;         /* Fija el ancho de las imágenes a 60px (puedes ajustar el tamaño según tu diseño) */
+    height: 60px;        /* Fija la altura de las imágenes a 60px, lo que hace que la imagen sea cuadrada */
+    object-fit: contain; /* Asegura que la imagen se ajusta dentro de las dimensiones definidas (60x60px) sin distorsionar */
+}
+
+#knowledge {
+    display: flex;                     
+    flex-direction: column;            
+    justify-content: space-between;    
+    align-items: center;               
+}
+
+
+.sector-icon span {
+    font-size: 14px;      /* Define el tamaño de la fuente del texto debajo de la imagen */
+    margin-top: 10px;     /* Agrega un espacio entre la imagen y el texto, ajustable según tus necesidades */
+    text-align: center;   /* Asegura que el texto debajo de la imagen esté centrado */
+}
+
+
+.sector-icon {
+    width: 100%;                             /* Hace que cada sector-icon ocupe todo el ancho disponible */
+    display: flex;                           /* Utiliza Flexbox para el diseño dentro de cada .sector-icon */
+    flex-direction: column;                  /* Coloca los elementos dentro de .sector-icon en columna (imagen arriba, texto abajo) */
+    align-items: center;                     /* Centra los elementos (imagen y texto) horizontalmente */
+    gap: 0.2rem;                       /* Espacio entre la imagen y el texto, controlado por la variable CSS --gap-1 */
+    padding: 10px;      
+    border: 1px solid                        /* Añade un borde alrededor de cada sector-icon */
+     rgba(0 0 0 / 10%); /* El color del borde es una mezcla de dos colores, uno primario y otro transparente */
+    border-radius: 16px;                     /* Da bordes redondeados a cada sector-icon */
+    transition: all .35s ease-in-out;           /* Añade una transición suave cuando los estilos cambian (como hover) */
+    text-align: center;                      /* Centra el texto dentro de .sector-icon */
+    margin: 10px;
+}
+
+.all-icons {
+    margin-bottom: var(--gap-6); /* Mantiene el margen inferior */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Sigue siendo una cuadrícula de 3 columnas */
+    align-items: flex-start; /* Alinea los elementos al inicio verticalmente */
+    gap: 30px; /* Incrementa este valor para aumentar el espacio entre iconos */
+}

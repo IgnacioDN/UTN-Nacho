@@ -1,0 +1,165 @@
+ /*  padding: 100px;tamaños relativos
+     /* padding: 5%;tamaños absolutos*/
+     /*16:9 1920x1080 mismo aspect ratio*/
+     /*padding: 2rem 5rem; /*arriba abajo izq dere*/
+     /*padding: 2rem 5rem 20px; /*arriba izq dere abajo*/
+     /*padding: 2px 50% 2px 5rem; /*arriba derecha abajo izq*/
+     /*padding-inline: 20px 40px;/*izq derecha*/
+     /*padding-block:20px 40px; /*arriba abajo*/
+
+     /* diferencias entre clase e id: el id es unico 
+     y con una clase puede editar varios elementos a la vez*/
+
+
+
+     
+/*.presentacion {
+    display: block;
+}
+.bloque {
+    display: block;
+
+}
+
+saber que el display flex solo funciona para contenedores
+para elementos sueltos se utiliza inline
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box; /*cambiar el contenido en base al padding*/
+
+
+/*
+
+body{
+    background-color:antiquewhite;
+}
+
+.titleh1{ 
+    background-color: bisque;
+    margin-right: 24px;
+    font-style:oblique;
+    width: fit-content;
+    display: flex; /*que sus hijos sean etiquetas de bloque*/
+
+
+/*
+h1{
+    color:black;
+    padding: 24px;
+    display:inline;
+    border: 20px solid #fff;
+    margin-right: 20px;
+}
+
+.titleh2{
+    width: 200px;
+
+} 
+
+
+/* Repaso Clase 3 - ARMADO DE PAGINA CSS 
+
+-hacer un reset para quitar los padding que vienen por default
+-haciendo una clase * y poniendoles margin y padding 0 se puede quitar todo el padding que viene por default
+-contenedor para el h1 "title"
+- title tiene width fit content -> (se pega al contenido)el tamaño de la etiqueta va ser el tamaño del contenido
+- display flex-> q los hijos sean elementos de bloque -x eso sacamos el display inline-
+- border-> solid, groove, dashed lo mas comun. los hexadecimales tmb se usan
+- box-sizing: border-box -> lo que hace es cambiar el tamaño del contenido en base al padding
+-box-sizing: content-box -> no lo modifica
+
+rgba -> r de red -cantidad de rojo entre 0 y 255- , g de green -cantidad de verde 0 y 255- , b de blue -cantidad de azul 0 y 255
+, a de alpha-opacidad un valor decimal entre 0 (completamente transparente) y 1 (completamente opaco)-
+
+
+
+/*CLASE 4- FLEXBOX
+
+-flexbox es un modelo de diseño en css. facilita la alineación
+y distribución de elementos dentro de un contenedor.
+
+-justify-content-> acomoda las cosas en horizontal
+
+-align-items->acomoda las cosas en vertical
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: #111;
+}
+
+.container{
+    width: 100%;
+    height: 600px;
+    background-color: #222;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    padding-inline: 5rem;
+    flex-wrap: wrap;
+}
+
+.item {
+    width: 200px;
+    height: 100px;
+    background-color:greenyellow;
+    flex-grow: 1;
+}
+
+.item-2 {
+    background-color: aqua;
+    
+}
+
+.item-3 {
+    background-color: burlywood;
+    
+}
+
+
+padding: 5rem; aplica de igual forma en cualquier pantalla
+16:9 aspect ratio
+
+
+
+padding:  2rem 5rem; aplica el primer valor para arriba y abajo 
+y el segundo valor a los costados
+padding 2px 5px 2 px 5px ARRIBA DERECHA ABAJO IZQUIERDA
+padding block(arriba abajo)
+padding inline (izq der)
+
+<section>
+        <h1>Pasos para ser Tuenti</h1>
+        <!-- DIVDITIS = UTILIZAR MUCHOS DIV -->
+        <ul>
+            <li>
+                <h2>#1</h2>
+                <h3>Pasos</h3>
+                <p>Descripción...</p>
+            </li>
+            <li>
+                <h2>#2</h2>
+                <h3>Pasos</h3>
+                <p>Descripción...</p>
+            </li>
+            <li>
+                <h2>#3</h2>
+                <h3>Pasos</h3>
+                <p>Descripción...</p>
+            </li>
+            <li>
+                <h2>#4</h2>
+                <h3>Pasos</h3>
+                <p>Descripción...</p>
+            </li>
+        </ul>
+    </section>
